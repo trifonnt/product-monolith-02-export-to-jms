@@ -1,0 +1,28 @@
+## Run ActiveMQ in docker container
+$ docker run --name='my-activemq' -it --rm \
+ -e 'ACTIVEMQ_MIN_MEMORY=512' \
+ -e 'ACTIVEMQ_MAX_MEMORY=1024' \
+ -p 8161:8161 \
+ -p 61616:61616 \
+ -p 61613:61613 \
+ webcenter/activemq:5.14.3
+
+-v /data/activemq:/data/activemq \
+-v /var/log/activemq:/var/log/activemq \
+
+
+## Admin interface
+ - http://localhost:8161/
+
+
+## H2 Console
+ - http://localhost:8080/h2-console
+
+
+##
+   How to add audit for logout with Jhipster generated code?
+ - http://stackoverflow.com/questions/28853218/how-to-add-audit-for-logout-with-jhipster-generated-code
+
+##
+   Dynamically Filter JSON With Jackson and Squiggly
+ - https://dzone.com/articles/dynamically-filter-json-with-jackson-and-squiggly
