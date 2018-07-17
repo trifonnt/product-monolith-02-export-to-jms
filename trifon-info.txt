@@ -1,3 +1,6 @@
+# Goal of this application is to export message to JMS server when User in JHipster is updated.
+
+
 ## Run ActiveMQ in docker container
 $ docker run --name='my-activemq' -it --rm \
  -e 'ACTIVEMQ_MIN_MEMORY=512' \
